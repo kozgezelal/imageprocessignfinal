@@ -297,3 +297,18 @@ print("""
     img.std(), stretched.std(), stretched.std()/img.std()
 ))
   pip install opencv-python numpy matplotlib scipy
+
+
+  Bu proje aşağıdaki görüntü işleme problemlerini çözmektedir:
+
+Renkli yama ekleme
+
+Negatif görüntü oluşturma
+
+Log ve ters log dönüşümleri
+
+Keskinleştirme (uzamsal ve frekans alanında)
+
+Gürültü analizi ve temizleme
+
+Kontrast iyileştirme teknikleri
