@@ -4,8 +4,74 @@
 
 ## Gereksinimler
 - Python 3.8+
-- Gerekli kütüphaneler:
-  ```bash
+- Gerekli kütüphaneler:Temel Kütüphaneler:
+OpenCV (cv2) - Görüntü işleme operasyonları için
+
+imread(): Görüntü okuma
+
+cvtColor(): Renk uzayı dönüşümleri
+
+rectangle(): Dikdörtgen çizme
+
+medianBlur(): Gürültü temizleme
+
+equalizeHist(): Histogram eşitleme
+
+NumPy (np) - Bilimsel hesaplamalar ve dizi operasyonları için
+
+Dizi işlemleri ve matematiksel fonksiyonlar
+
+log1p(), exp(): Logaritmik dönüşümler
+
+Veri normalizasyonu
+
+Matplotlib (plt) - Görselleştirme için
+
+imshow(): Görüntü gösterme
+
+subplot(): Çoklu görsel
+
+hist(): Histogram çizme
+
+figure(), title(): Grafik ayarları
+
+SciPy FFT Modülü - Frekans alanı işlemleri için
+
+fft2(), ifft2(): Fourier dönüşümleri
+
+fftshift(), ifftshift(): Spektrum merkezleme
+
+Google Colab'a Özel:
+Google Colab Kütüphaneleri:
+
+drive.mount(): Google Drive bağlama
+
+cv2_imshow(): Colab'da OpenCV görüntü gösterme (alternatif)
+
+Yardımcı Kütüphaneler:
+Random - Rastgele piksel seçimi için
+
+Math - Matematiksel hesaplamalar için
+  ```bash!pip install opencv-python numpy matplotlib scipy
+# Görüntü okuma ve dönüşüm
+import cv2
+img = cv2.imread('image.jpg')
+
+# Matematiksel işlemler
+import numpy as np
+log_transformed = np.log1p(img)
+
+# Görselleştirme
+import matplotlib.pyplot as plt
+plt.imshow(img, cmap='gray')
+
+# Fourier dönüşümü
+from scipy.fft import fft2, ifft2
+f_transform = fft2(img)
+
+# Google Drive entegrasyonu
+from google.colab import drive
+drive.mount('/content/drive')
   #%% [markdown]
 # # UYG332 Image Processing Final Project
 # **Öğrenci Adı:** [ÖZGE ZELAL KÜÇÜK]
